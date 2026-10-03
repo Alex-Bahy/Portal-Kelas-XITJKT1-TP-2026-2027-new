@@ -663,23 +663,22 @@ footer .footer-tag{
 
 <script>
 const PASS='SMKBisa';
-const DATA_URL='https://alex-bahy.github.io/Datas-siswa-XTJKT1-2026/';
-const SK='xtjkt1_mapel_links_v1';
+const DATA_URL='https://alex-bahy.github.io/Datas-siswa-XTJKT1-2026/'; // ← belum ada link baru, ganti jika sudah ada
+const SK='xtjkt1_mapel_links_v2';
 
 const DEFAULTS={
-  '01':'https://alex-bahy.github.io/Agama-XTJKT1-2026/',
-  '02':'https://alex-bahy.github.io/Pend.-Pancasila-XTJKT1-2026/',
-  '03':'https://alex-bahy.github.io/B.-Indonesia-XTJKT1-2026/',
-  '04':'https://alex-bahy.github.io/PJOK-XTJKT1-2026/',
-  '05':'https://alex-bahy.github.io/Sejarah-XTJKT1-2026/',
-  '06':'https://alex-bahy.github.io/Seni-Budaya-XTJKT1-2026/',
-  '07':'https://alex-bahy.github.io/Matematika-XTJKT1-2026/',
-  '08':'https://alex-bahy.github.io/B.-Inggris-XTJKT1-2026/',
-  '09':'https://alex-bahy.github.io/Informatika-XTJKT1-2026/',
-  '10':'https://alex-bahy.github.io/Projek-IPAS-XTJKT1-2026/',
-  '11':'https://alex-bahy.github.io/Dasar-Program-Keahlian-XTJKT1-2026/',
-  '12':'https://alex-bahy.github.io/Muatan-Lokal-XTJKT1-2026/',
-  'L1':'https://alex-bahy.github.io/Ledger-XTJKT1-2026/',
+  '01':'https://alex-bahy.github.io/DN-Pend.-Agama-XITJKT1-ganjil-TP-2026-2027/',
+  '02':'https://alex-bahy.github.io/DN-Pend.-Pancasila-XITJKT1-Ganjil-TP-2026-2027/',
+  '03':'https://alex-bahy.github.io/DN-B.-Indonesia-XITJKT1-ganjil-TP-2026-2027/',
+  '04':'https://alex-bahy.github.io/DN-PJOK-XITJKT1-ganjil-TP-2026-2027/',
+  '05':'https://alex-bahy.github.io/DN-Sejarah-XITJKT1-ganjil-TP-2026-2027/',
+  '06':'https://alex-bahy.github.io/DN-Matematika-XITJKT1-ganjil-TP-2026-2027/',
+  '07':'https://alex-bahy.github.io/DN-B.-Inggris-XITJKT1-ganjil-TP-2026-2027/',
+  '08':'https://alex-bahy.github.io/DN-K.-Keahlian-XITJKT1-ganjil-TP-2026-2027/',
+  '09':'https://alex-bahy.github.io/DN-KIK-XITJKT1-ganjil-TP-2026-2027/',
+  '10':'https://alex-bahy.github.io/DN-Mapel-Pilihan-XITJKT1-ganjil-TP-2026-2027/',
+  '11':'https://alex-bahy.github.io/DN-Mulok-XITJKT1-ganjil-TP-2026-2027/',
+  'L1':'https://alex-bahy.github.io/Ledger-XITJKT1-ganjil-TP-2026-2027/',
 };
 
 const SUBJECTS={
@@ -689,20 +688,19 @@ const SUBJECTS={
     {id:'03',name:'Bahasa Indonesia',                            type:'Mapel Umum',    cls:'card-u'},
     {id:'04',name:'Pendidikan Jasmani, Olahraga dan Kesehatan',  type:'Mapel Umum',    cls:'card-u'},
     {id:'05',name:'Sejarah',                                     type:'Mapel Umum',    cls:'card-u'},
-    {id:'06',name:'Seni Budaya',                                 type:'Mapel Umum',    cls:'card-u'},
   ],
   kejuruan:[
-    {id:'07',name:'Matematika',                                        type:'Mapel Kejuruan',cls:'card-k'},
-    {id:'08',name:'Bahasa Inggris',                                    type:'Mapel Kejuruan',cls:'card-k'},
-    {id:'09',name:'Informatika',                                       type:'Mapel Kejuruan',cls:'card-k'},
-    {id:'10',name:'Projek Ilmu Pengetahuan Alam dan Sosial',           type:'Mapel Kejuruan',cls:'card-k'},
-    {id:'11',name:'Dasar-dasar Program Keahlian',                      type:'Mapel Kejuruan',cls:'card-k'},
+    {id:'06',name:'Matematika',                                   type:'Mapel Kejuruan',cls:'card-k'},
+    {id:'07',name:'Bahasa Inggris',                               type:'Mapel Kejuruan',cls:'card-k'},
+    {id:'08',name:'Konsentrasi Keahlian',                         type:'Mapel Kejuruan',cls:'card-k'},
+    {id:'09',name:'Kreativitas, Inovasi, dan Kewirausahaan (KIK)',type:'Mapel Kejuruan',cls:'card-k'},
+    {id:'10',name:'Mata Pelajaran Pilihan',                       type:'Mapel Kejuruan',cls:'card-k'},
   ],
   mulok:[
-    {id:'12',name:'Membatik Khas Maluku',                              type:'Muatan Lokal',  cls:'card-m',mulok:true},
+    {id:'11',name:'Membatik Khas Maluku',                         type:'Muatan Lokal',  cls:'card-m',mulok:true},
   ],
   ledger:[
-    {id:'L1',name:'Ledger Nilai — Rekap Semua Mata Pelajaran',         type:'Ledger & Rekap',cls:'card-l',ledger:true},
+    {id:'L1',name:'Ledger Nilai — Rekap Semua Mata Pelajaran',    type:'Ledger & Rekap',cls:'card-l',ledger:true},
   ]
 };
 
